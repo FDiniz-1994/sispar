@@ -1,9 +1,9 @@
 import Login from "./components/Login/Login.jsx"
+import "./global.scss"
 
 function app(){
   return(
     <>
-    <h1>SISPAR</h1>
     <Login/>
     </>
   )

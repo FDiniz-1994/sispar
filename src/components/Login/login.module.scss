@@ -1,0 +1,81 @@
+main{
+    display:flex
+}
+
+.containerImagem{
+background-image: url("../../assets/Tela\ Login/imagem tela de login.png") ;
+height: 100vh;
+width: 70%;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+.containerForm{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        width:30%;
+        font-size: 2rem;
+        text-align: center;
+        font-family: Inter, sans-serif;
+    }
+    p{
+        font-size: 1rem;
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+        color: #0844c4;
+
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 70%;
+    input{
+        display: flex;
+        flex-direction: column;
+        width:40vh ;
+        height:10vh ;
+        border-radius: 6px;
+    }
+    a{
+        font-family: Inter;
+        font-size: 12px;
+        text-decoration: none;
+        color: #23282f;
+        font-weight: 500;
+    }
+    div{
+        display: flex;
+        width: 50%;
+        justify-content:space-between;
+        font-size:1rem;
+
+        .buttonEntrar{
+            background-color: #001a3d;
+            border: none;
+            width: 6vw;
+            height: 6vh;
+            border-radius: 6px;
+            color: white;
+            font-weight: 500;
+        }
+        .buttonCriar{
+            background-color: #00bedd;
+            border: none;
+            width: 6vw;
+            height: 6vh;
+            border-radius: 6px;
+            font-family: inter;
+            color: white;
+            font-weight: 500;
+        }
+    }
+}
