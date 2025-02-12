@@ -1,12 +1,19 @@
+import { BrowserRouter,Routes,Route } from "react-router-dom"
 import Login from "./components/Login/Login.jsx"
+import Reembolsos from "./components/Reembolsos/Reembolsos.jsx"
+import Solicitacao from "./components/Solicitacao/Solicitacao.jsx"
 import "./global.scss"
 
 function app(){
   return(
-    <>
-    <Login/>
-    </>
-  )
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/reembolsos" element={<Reembolsos/>}/>
+      <Route path="/solicitacao" element={<Solicitacao/> }/>
+    </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default app
