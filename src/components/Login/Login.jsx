@@ -4,10 +4,9 @@ import Styles from "./Login.module.scss"
 
 
 function login(){
-
     const navigate = useNavigate() 
 
-    const paraReembolso =()=>{
+    const paraReembolsos =()=>{
         navigate("/reembolsos")
     }
 
