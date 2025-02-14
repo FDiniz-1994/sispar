@@ -1,6 +1,59 @@
+
 header{
     width: 8vw;
+    height: 5vh;
     display: flex;
-    border-color: red;
+    border: solid red;
     justify-content: space-between;
+}
+
+.mainReembolsos{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 60%;
+    }
+}
+
+.containerCards{
+    border: solid red;
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    width: 60%;
+
+}
+
+article{
+    border: solid gray;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerStatus{
+    background-color: peru;
+    display: flex;
+    width: 60%;
+    height: 15vh;
+    justify-content: space-evenly;
+    align-items: center;
+    div{
+        border: solid red;
+        width: 15%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.NumeroSolicitados{
+    background-color: skyblue;
+    border: 6px;
+    padding: 1px;
 }
