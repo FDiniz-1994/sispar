@@ -14,7 +14,7 @@ import NavBar from "../navbar/NavBar.jsx";
 function Reembolsos(){
     return(
         <>
-        <div className={Styles.containerReembolsos}>
+        <div className={Styles.containerNavbar}>
             <NavBar/>
             <header>
                 <img src={Home} alt="Casinha da Header" />

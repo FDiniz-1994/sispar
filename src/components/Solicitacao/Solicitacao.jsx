@@ -1,6 +1,4 @@
 import NavBar from "../navbar/NavBar.jsx";
-import Styles from "./solicitacao/solicitacao.module.scss"
-
 function Solicitacao(){
     return(
         <>

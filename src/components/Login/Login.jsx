@@ -12,7 +12,7 @@ function login(){
 
     return(
         <>
-        <main>
+        <main className={Styles.mainInicio}>
         <section className={Styles.containerImagem}>
         </section>
 

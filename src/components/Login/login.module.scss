@@ -1,5 +1,5 @@
-main{
-    display:flex
+.mainInicio{
+    display:flex ;
 }
 
 .containerImagem{
@@ -11,6 +11,8 @@ background-size: contain;
 }
 
 .containerForm{
+    background-color: #5d6a6c;
+    height: 100vh;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -55,7 +57,9 @@ form{
         font-weight: 500;
     }
     div{
+        border: solid green;
         display: flex;
+        flex-direction: row;
         width: 37%;
         justify-content:space-between;
         font-size:1rem;
