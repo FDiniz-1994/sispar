@@ -1,18 +1,21 @@
-import Home from "../../assets/Header/botão - Home.png"
-import Seta from "../../assets/Header/botão - Sair.png"
-import Styles from "./Reembolsos.module.scss"
-import Solicitar from "../../assets/Dashboard/Solicitar - Reembolso.png"
-import Analise from "../../assets/Dashboard/Análises.png"
-import Historico from "../../assets/Dashboard/Solicitar - Histórico.png"
-import NumeroAnalises from "../../assets/Dashboard/N-Análises.png"
-import NumeroSolicitados from "../../assets/Dashboard/N-Solicitados.png"
-import NumeroAprovados from "../../assets/Dashboard/N-Aprovados.png"
-import NumeroReprovados from "../../assets/Dashboard/N-Rejeitados.png"
+import Home from "../../assets/Header/botão - Home.png";
+import Seta from "../../assets/Header/botão - Sair.png";
+import Styles from "./Reembolsos.module.scss";
+import Solicitar from "../../assets/Dashboard/Solicitar - Reembolso.png";
+import Analise from "../../assets/Dashboard/Análises.png";
+import Historico from "../../assets/Dashboard/Solicitar - Histórico.png";
+import NumeroAnalises from "../../assets/Dashboard/N-Análises.png";
+import NumeroSolicitados from "../../assets/Dashboard/N-Solicitados.png";
+import NumeroAprovados from "../../assets/Dashboard/N-Aprovados.png";
+import NumeroReprovados from "../../assets/Dashboard/N-Rejeitados.png";
+import NavBar from "../navbar/NavBar.jsx";
+
 
 function Reembolsos(){
     return(
         <>
-        <div>
+        <div className={Styles.containerReembolsos}>
+            <NavBar/>
             <header>
                 <img src={Home} alt="Casinha da Header" />
                 <img src={Seta} alt="Setinha da Header" />
@@ -42,7 +45,7 @@ function Reembolsos(){
 
                 <section className={Styles.containerStatus}>
                     <div>
-                        <img src={NumeroSolicitados} alt="" />
+                        <img className={Styles.NumeroSolicitados} src={NumeroSolicitados} alt="numero de solicitações" />
                         <h4>182</h4>
                         <p>Solicitados</p>
                     </div>

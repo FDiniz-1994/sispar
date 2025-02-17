@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Inter;
+}
+
+.containerReembolsos{
+    display: flex;
+}
 
 header{
     width: 8vw;
@@ -19,7 +28,7 @@ header{
 }
 
 .containerCards{
-    border: solid red;
+    border: solid blue;
     display: flex;
     height: 20vh;
     justify-content: space-between;
@@ -28,7 +37,7 @@ header{
 }
 
 article{
-    border: solid gray;
+    border: solid #cbd4e1;
     width: 15vw;
     display: flex;
     flex-direction: column;
@@ -45,7 +54,7 @@ article{
     justify-content: space-evenly;
     align-items: center;
     div{
-        border: solid red;
+        border: solid green;
         width: 15%;
         display: flex;
         justify-content: space-evenly;
@@ -53,7 +62,7 @@ article{
 }
 
 .NumeroSolicitados{
-    background-color: skyblue;
+    background-color: #00bedd;
     border: 6px;
-    padding: 1px;
+    padding: 6px;
 }
