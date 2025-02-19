@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import Logo from "../../assets/Tela Login/logo-ws.png"
-import Styles from "./Login.module.scss"
+import styles from "./Login.module.scss"
 
 
 function login(){
@@ -12,22 +12,26 @@ function login(){
 
     return(
         <>
-        <main className={Styles.mainInicio}>
-        <section className={Styles.containerImagem}>
+        <main className={styles.mainInicio}>
+       
+        <section className={styles.containerImagem}>
         </section>
 
-        <section className={Styles.containerForm}>
+        <section className={styles.containerForm}>
             <img src={Logo} alt="logo da Wilson Sons" />
             <h1>Boas vindas ao novo portal SISPAR</h1>
             <p>Sistema de Emissão de Boletos e Parcelamento</p>
+
             <form action="">
             <input type="email" name="Email" id="Email" placeholder="Email" />
             <input type="password" name="Senha" id="senha" placeholder="Senha" />
             <a href="">Esqueci minha senha</a>
-            <div>
-            <button onClick={paraReembolsos} className={Styles.buttonEntrar}>Entrar</button>
-            <button className={Styles.buttonCriar}>Criar Conta</button>
+
+            <div className={styles.boxButtonLogin}>
+            <button onClick={paraReembolsos} className={styles.buttonEntrar}>Entrar</button>
+            <button className={styles.buttonCriar}>Criar Conta</button>
             </div>
+            
             </form>
 
         </section>

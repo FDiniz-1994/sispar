@@ -1,87 +1,90 @@
-.mainInicio{
-    display:flex ;
-}
-
-.containerImagem{
-background-image: url("../../assets/Tela\ Login/imagem tela de login.png") ;
-height: 100vh;
-width: 70%;
-background-repeat: no-repeat;
-background-size: contain;
-}
-
-.containerForm{
-    background-color: #5d6a6c;
+.mainInicio {
+    display: flex;
+  }
+  
+  .containerImagem {
     height: 100vh;
-    width: 70%;
+    width: 60%;
+    background-image: url("../../assets/Tela\ Login/imagem tela de login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-position: center;
+  }
+  
+  .containerForm {
+   // background-color: #92b3b8;
+    height: 100vh;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h1{
-        width:40%;
-        font-size: 2rem;
-        text-align: center;
-        font-family: Inter, sans-serif;
+    h1 {
+      width: 40%;
+      font-size: 2rem;
+      text-align: center;
+      font-family: Inter, sans-serif;
     }
-    p{
-        font-size: 1rem;
-        font-family: Inter, sans-serif;
-        font-weight: 700;
-        color: #0844c4;
-
+    p {
+      font-size: 1rem;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      color: #0844c4;
+      margin-bottom: 1rem;
     }
-}
-
-form{
+  }
+  
+  form {
+  //  border: solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 20vh;
+    height: 35vh;
     width: 80%;
-    input{
-        display: flex;
-        flex-direction: column;
-        width:40vh ;
-        height:10vh ;
-        border-color: grey;
+    input {
+      display: flex;
+      flex-direction: column;
+      width: 40vh;
+      height: 5vh;
+      border-color: grey;
+      border-radius: 6px;
+    }
+    a {
+      width: 20%;
+      font-family: Inter;
+      font-size: 12px;
+      text-decoration: none;
+      color: #23282f;
+      font-weight: 500;
+    }
+    .boxButtonLogin {
+    //  border: solid green;
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+      height: 12vh;
+      justify-content: space-evenly;
+      font-size: 1rem;
+  
+      .buttonEntrar {
+        background-color: #001a3d;
+        border: none;
+        width: 6vw;
+        height: 6vh;
         border-radius: 6px;
-    }
-    a{
-        width:20%;
-        font-family: Inter;
-        font-size: 12px;
-        text-decoration: none;
-        color: #23282f;
+        color: white;
         font-weight: 500;
+      }
+      .buttonCriar {
+        background-color: #00bedd;
+        border: none;
+        width: 6vw;
+        height: 6vh;
+        border-radius: 6px;
+        font-family: inter;
+        color: white;
+        font-weight: 500;
+      }
     }
-    div{
-        border: solid green;
-        display: flex;
-        flex-direction: row;
-        width: 37%;
-        justify-content:space-between;
-        font-size:1rem;
-
-        .buttonEntrar{
-            background-color: #001a3d;
-            border: none;
-            width: 6vw;
-            height: 6vh;
-            border-radius: 6px;
-            color: white;
-            font-weight: 500;
-        }
-        .buttonCriar{
-            background-color: #00bedd;
-            border: none;
-            width: 6vw;
-            height: 6vh;
-            border-radius: 6px;
-            font-family: inter;
-            color: white;
-            font-weight: 500;
-        }
-    }
-}
+  }
