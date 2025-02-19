@@ -1,12 +1,65 @@
 import NavBar from "../navbar/NavBar.jsx";
 import styles from "./Solicitacao.module.scss"
+import Home from "../../assets/homeHeader.png";
+import Seta from "../../assets/vector.png";
+
 function Solicitacao(){
     return(
-        <div className={styles.containerSolicitacao}>
+        <div className={styles.layoutSolicitacao}>
         <NavBar/>
-        
-        <h2>Sou o componente solicitação</h2>
+        <div className={styles.containerPrincipalSolicitacao}>
+        <header className={styles.headerSolicitacao}>
+            <img src={Home} alt="icone da home" />
+            <img src={Seta} alt="ícone da seta" />
+            <p>Reembolsos</p>
+            <img src={Seta} alt="ícone da seta" />
+            <p>Solicitações</p>
+
+        </header>
+        <main className={styles.mainSolitacao}>
+            <form className={styles.formSolicitacao}>
+                <div className={styles.grupo1}>
+                <div className={styles.inputNome}>
+                    <label htmlFor="">Nome Completo</label>
+                    <input type="text" />
+                </div>
+                <div className={styles.inputEmpresa}>
+                    <label htmlFor="">Empresa</label>
+                    <input type="text" />
+                </div>
+                <div className={styles.inputPrestacao}>
+                    <label htmlFor="">Nº Prest. Contas</label>
+                    <input type="number" />
+                </div>
+                <div className={styles.inputMotivo}>
+                    <label htmlFor="">Descrição/Motivo do Reembolso</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                </div>
+
+                <div className={styles.barraVertical}>   
+                </div>
+
+                <div className={styles.grupo2}>
+                    <div className={styles.inputData}>
+                        <label htmlFor="">Data</label>
+                        <input type="date" name="" id="" />
+                    </div>
+                    <div className={styles.inputDespesas}>
+                        <label htmlFor="">Tipos de Despesa</label>
+                        <select name="" id="">
+                        <option value="">Selecionar</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustível</option>
+                        </select>
+                    </div>
+
+                </div>
+            </form>
+
+        </main>
         </div>
+        </div>  
     )
 }
 

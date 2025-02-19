@@ -4,7 +4,7 @@
   
   .containerImagem {
     height: 100vh;
-    width: 60%;
+    width: 55%;
     background-image: url("../../assets/Tela\ Login/imagem tela de login.png");
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -14,7 +14,7 @@
   .containerForm {
    // background-color: #92b3b8;
     height: 100vh;
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,13 +34,13 @@
     }
   }
   
-  form {
+  .formLogin {
   //  border: solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 35vh;
+    height: 25vh;
     width: 80%;
     input {
       display: flex;
@@ -51,7 +51,7 @@
       border-radius: 6px;
     }
     a {
-      width: 20%;
+      width: 30%;
       font-family: Inter;
       font-size: 12px;
       text-decoration: none;
@@ -65,6 +65,7 @@
       width: 60%;
       height: 12vh;
       justify-content: space-evenly;
+      align-items: center;
       font-size: 1rem;
   
       .buttonEntrar {

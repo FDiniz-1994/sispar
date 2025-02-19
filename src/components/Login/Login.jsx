@@ -22,7 +22,7 @@ function login(){
             <h1>Boas vindas ao novo portal SISPAR</h1>
             <p>Sistema de Emissão de Boletos e Parcelamento</p>
 
-            <form action="">
+            <form className={styles.formLogin}>
             <input type="email" name="Email" id="Email" placeholder="Email" />
             <input type="password" name="Senha" id="senha" placeholder="Senha" />
             <a href="">Esqueci minha senha</a>

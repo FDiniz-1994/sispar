@@ -1,3 +1,72 @@
-.containerSolicitacao{
+.layoutSolicitacao{
     display: flex;
+}
+
+.headerSolicitacao{
+    border: solid red;
+    width: 20%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mainSolicitacao{
+    height: 100%;
+}
+
+.formSolicitacao{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input,select,textarea{
+    border-radius: 6px;
+    border: solid #cbd4e1 0.8px;
+    height: 3vh;
+    width: 100%;
+    font-size: 1rem;
+}
+
+label{
+    font-size: 16px;
+    color: #23282f;
+    font-weight: 700;
+    font-size: 1rem;
+}
+textarea{
+    height: 10vh;
+}
+
+.grupo1{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputNome{
+    width: 45%;
+}
+.inputEmpresa{
+    width: 25%;
+}
+.inputPrestacao{
+    width: 25%;
+}
+.inputMotivo{
+    width: 100%;
+}
+.barraVertical{
+    height: 25vh;
+    border: solid #cbd4e1 1px;
+    width: 0.1px
+}
+.grupo2{
+    width: 55%;
+    border: solid red;
+    height:25vh;
+
 }
