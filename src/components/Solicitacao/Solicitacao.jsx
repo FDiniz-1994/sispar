@@ -2,6 +2,8 @@ import NavBar from "../navbar/NavBar.jsx";
 import styles from "./Solicitacao.module.scss"
 import Home from "../../assets/homeHeader.png";
 import Seta from "../../assets/vector.png";
+import Lixeira from "../../assets/solicitacao/lixeira.png"
+import Motivo from "../../assets/solicitacao/motivo.png"
 
 function Solicitacao(){
     return(
@@ -62,9 +64,9 @@ function Solicitacao(){
                         <label htmlFor="">Centro de Custo</label>
                         <select name="" id="">
                         <option value="">Selecionar</option>
-                        <option value="">FIN CONTROLES INTERNOS MTZ</option>
-                        <option value="">FIN VICE-PRESIDENCIA FINANCIAS MTZ</option>
-                        <option value="">FIN CONTABILIDADE MTZ</option>
+                        <option value="">1100109002 - FIN CONTROLES INTERNOS MTZ</option>
+                        <option value="">1100110002 - FIN VICE-PRESIDENCIA FINANCAS MTZ</option>
+                        <option value="">1100110101 - FIN CONTABILIDADE MTZ</option>
                         </select>
                     </div>
                     <div className={styles.inputOrdem}>
@@ -81,7 +83,13 @@ function Solicitacao(){
                     </div>
                     <div className={styles.inputMoeda}>
                     <label htmlFor="">Moeda</label>
-                    <input type="number" />
+                    <select name="" id="">
+                  <option value=""></option>
+                  <option value="">BRL</option>
+                  <option value="">ARS</option>
+                  <option value="">USD</option>
+                </select>
+
                     </div>
                     <div className={styles.inputDist}>
                     <label htmlFor="">Dist/Km</label>
@@ -99,8 +107,55 @@ function Solicitacao(){
                     <label htmlFor="">Despesa</label>
                     <input type="number" />
                     </div>
+                    <div className={styles.botoes}>
+                        <button className={styles.botaoSalvar}>Salvar</button>
+                        <button className={styles.botaoDeletar}>Del</button>
+                    </div>
                 </div>
             </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Colaborador</th>
+                        <th>Empresa</th>
+                        <th>Nº Prest.</th>
+                        <th>Data</th>
+                        <th>Motivo</th>
+                        <th>Tipo de Despesa</th>
+                        <th>Ctr. Custo</th>
+                        <th>Ord. Int.</th>
+                        <th>Div.</th>
+                        <th>PEP</th>
+                        <th>Moeda</th>
+                        <th>Dist/Km</th>
+                        <th>Val. Km</th>
+                        <th>Val. Faturado</th>
+                        <th>Despesa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src={Lixeira} alt="" /></td>
+                        <td>Fulano da Silva</td>
+                        <td>Mototaxi</td>
+                        <td>12345</td>
+                        <td>21-02-2025</td>
+                        <td><img src={Motivo} alt="" /></td>
+                        <td>Alimentação</td>
+                        <td>200.00</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>nada</td>
+                        <td>BRL</td>
+                        <td>20km</td>
+                        <td>8.50</td>
+                        <td>600</td>
+                        <td>1500</td>
+                    </tr>
+                </tbody>
+            </table>
+
 
         </main>
         </div>

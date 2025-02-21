@@ -88,3 +88,21 @@ article{
     border-radius: 6px;
     padding: 6px;
 }
+
+table{
+    width: 100%;
+    border: solid #f1f4f9 0.8px;
+    border-collapse: collapse;
+    font-weight: 300;
+
+}
+
+td,th{
+    border: solid 0.8px;
+    text-align: center;
+}
+th{
+    background-color: #cbd4e1;
+    font-weight: 400;
+    font-size: 1rem;
+}
