@@ -51,9 +51,54 @@ function Solicitacao(){
                         <option value="">Selecionar</option>
                         <option value="">Alimentação</option>
                         <option value="">Combustível</option>
+                        <option value="">Condução</option>
+                        <option value="">Estacionamento</option>
+                        <option value="">Viagem admin.</option>
+                        <option value="">Viagem operacional</option>
+                        <option value="">Eventos de Representação</option>
                         </select>
                     </div>
-
+                    <div className={styles.inputCusto}>
+                        <label htmlFor="">Centro de Custo</label>
+                        <select name="" id="">
+                        <option value="">Selecionar</option>
+                        <option value="">FIN CONTROLES INTERNOS MTZ</option>
+                        <option value="">FIN VICE-PRESIDENCIA FINANCIAS MTZ</option>
+                        <option value="">FIN CONTABILIDADE MTZ</option>
+                        </select>
+                    </div>
+                    <div className={styles.inputOrdem}>
+                    <label htmlFor="">Ord. Int.</label>
+                    <input type="text" />
+                    </div>
+                    <div className={styles.inputDiv}>
+                    <label htmlFor="">Div</label>
+                    <input type="text" />
+                    </div>
+                    <div className={styles.inputPep}>
+                    <label htmlFor="">PEP</label>
+                    <input type="text" />
+                    </div>
+                    <div className={styles.inputMoeda}>
+                    <label htmlFor="">Moeda</label>
+                    <input type="number" />
+                    </div>
+                    <div className={styles.inputDist}>
+                    <label htmlFor="">Dist/Km</label>
+                    <input type="number" />
+                    </div>
+                    <div className={styles.inputValor}>
+                    <label htmlFor="">Valor/Km</label>
+                    <input type="number" />
+                    </div>
+                    <div className={styles.inputFaturado}>
+                    <label htmlFor="">Val. Faturado</label>
+                    <input type="number" />
+                    </div>
+                    <div className={styles.inputDespesa}>
+                    <label htmlFor="">Despesa</label>
+                    <input type="number" />
+                    </div>
                 </div>
             </form>
 

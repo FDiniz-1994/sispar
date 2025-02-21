@@ -3,8 +3,7 @@
 }
 
 .headerSolicitacao{
-    border: solid red;
-    width: 20%;
+    width: 18%;
     height: 5vh;
     display: flex;
     justify-content: space-between;
@@ -34,7 +33,7 @@ label{
     font-size: 16px;
     color: #23282f;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 textarea{
     height: 10vh;
@@ -69,4 +68,41 @@ textarea{
     border: solid red;
     height:25vh;
 
+}
+.grupo2{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputData{
+    width: 20%;
+}
+.inputDespesas{
+    width: 30%;
+}
+.inputCustos{
+    width:55%;
+}
+.inputOrdem{
+    width:10%
+}
+.inputPep{
+    width:10%;
+}
+.inputMoeda{
+    width: 10%;
+}
+.inputDist{
+    width:10%;
+}
+.inputValor{
+    width:10%;
+}
+.inputFaturado{
+    width:10%;
+}
+.inputDespesa{
+    width:10%;
 }
