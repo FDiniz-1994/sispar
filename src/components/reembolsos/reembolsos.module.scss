@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Inter;
+}
+
+.containerNavbar{
+    display: flex;
+}
+
+.headerReembolsos{
+    width: 10%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainReembolsos{
+    width: 95vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    height: 95vh;
+    align-items: center;
+
+
+}
+
+   .containerCards{
+    height: 40vh;
+    width: 60vw;
+   display: flex;
+   flex-direction: row;
+
+}
+
+article{
+    border: solid #cbd4e1;
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerStatus{
+    border: solid #cbd4e1;
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+ 
+    
+    div{
+        display: flex;
+        flex-direction: row;
+        width: 10vw;
+        height: 5vh;
+      
+    }
+}
+
+.NumeroSolicitados{
+    background-color: #00bedd;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.NumeroAprovados{
+    background-color: #e56700;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.NumeroAnalises{
+    background-color: #007a6a;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.NumeroReprovados{
+    background-color: #a60b2f;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+table{
+    width: 100%;
+    border: solid #f1f4f9 0.8px;
+    border-collapse: collapse;
+    font-weight: 300;
+
+}
+
+td,th{
+    border: solid 0.8px;
+    text-align: center;
+}
+th{
+    background-color: #cbd4e1;
+    font-weight: 400;
+    font-size: 1rem;
+}
