@@ -4,7 +4,7 @@ import Reembolsos from "./components/reembolsos/reembolsos.jsx"
 import Solicitacao from "./components/solicitacao/solicitacao.jsx"
 import "./global.scss"
 
-function app(){
+function App(){
   return(
     <BrowserRouter>
     <Routes>
@@ -16,4 +16,4 @@ function app(){
   );
 }
 
-export default app
+export default App
